@@ -26,7 +26,6 @@ const createRandomNumber = () => {
       gameNumberArr.unshift("0");
     }
   }
-  console.log(gameNumberArr);
 };
 
 const comparison = () => {
@@ -69,7 +68,6 @@ const procesingInput = () => {
   const thirdInputValue = thirdInput.value;
 
   userNumberArr.push(firstInputValue, secondInputValue, thirdInputValue);
-  console.log(userNumberArr);
 };
 
 const disabledCheck = () => {
