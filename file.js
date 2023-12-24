@@ -40,16 +40,16 @@ const comparison = () => {
         firstMessage.textContent = "Перше число невірне";
       }
       if (userNumberArr[1] === gameNumberArr[1]) {
-        secondMessage.textContent = "Перше число вірне";
+        secondMessage.textContent = "Друге число вірне";
         corectNumber++;
       } else {
-        secondMessage.textContent = "Перше число невірне";
+        secondMessage.textContent = "Друге число невірне";
       }
       if (userNumberArr[2] === gameNumberArr[2]) {
-        thirdMessage.textContent = "Перше число вірне";
+        thirdMessage.textContent = "Третє число вірне";
         corectNumber++;
       } else {
-        thirdMessage.textContent = "Перше число невірне";
+        thirdMessage.textContent = "Третє число невірне";
       }
     }
   }
