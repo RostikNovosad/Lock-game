@@ -67,6 +67,7 @@ h1 {
 
 .try {
   width: 100px;
+  padding: 0;
 }
 
 .reset {
