@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Lock Game</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="heading">Почати гру!</h1>
+      <div class="lock">
+        <img src="./img/lock.png" alt="lock" class="lock-img" />
+        <div class="number-inputs-container">
+          <input
+            id="num1"
+            min="0"
+            max="9"
+            maxlength="1"
+            size="1"
+            type="text"
+            oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+            class="num1 number-input"
+            required
+          />
+          <input
+            id="num2"
+            min="0"
+            max="9"
+            type="text"
+            size="1"
+            maxlength="1"
+            oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+            class="num2 number-input"
+            required
+          />
+          <input
+            id="num3"
+            min="0"
+            max="9"
+            type="text"
+            maxlength="1"
+            size="1"
+            oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+            class="num3 number-input"
+            required
+          />
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="first-row">
+          <button type="button" class="reset">
+            <img src="./img/reset.png" alt="" />
+          </button>
+          <button type="button" class="try" disabled>Перевірити</button>
+        </div>
+        <button type="button" class="start">Почати гру!</button>
+      </div>
+    </div>
+
+    <div class="backdrop hidden">
+      <div class="hint">
+        <button class="close-hint">
+          <img src="./img/close.png" alt="" class="close-img" />
+        </button>
+        <div class="messages">
+          <p class="message-1"></p>
+          <p class="message-2"></p>
+          <p class="message-3"></p>
+        </div>
+      </div>
+    </div>
+    <script src="./file.js"></script>
+  </body>
+</html>
